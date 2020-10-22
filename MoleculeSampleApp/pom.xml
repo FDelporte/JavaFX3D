@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>be.webtechie</groupId>
-    <artifactId>javafx-dashboard</artifactId>
+    <groupId>moleculesampleapp</groupId>
+    <artifactId>moleculesampleapp</artifactId>
     <version>0.0.1</version>
 
     <properties>
@@ -16,18 +16,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>11.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-web</artifactId>
-            <version>11.0.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/eu.hansolo/tilesfx -->
-        <dependency>
-            <groupId>eu.hansolo</groupId>
-            <artifactId>tilesfx</artifactId>
-            <version>11.13</version>
         </dependency>
     </dependencies>
 
@@ -52,7 +40,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>be.webtechie.App</mainClass>
+                            <mainClass>moleculesampleapp.MoleculeSampleApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

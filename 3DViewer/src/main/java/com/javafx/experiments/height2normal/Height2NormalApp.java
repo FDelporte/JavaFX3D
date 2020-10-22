@@ -43,7 +43,6 @@ import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.beans.binding.ObjectBinding;
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.Group;
 import javafx.scene.PerspectiveCamera;
 import javafx.scene.Scene;
@@ -156,11 +155,14 @@ public class Height2NormalApp  extends Application {
         }
         File normalFile = fileChooser.showSaveDialog(stage);
         if (normalFile != null) {
+            /*
+            TODO rewrite to remove Swing dependency
             try {
                 ImageIO.write(SwingFXUtils.fromFXImage(normalImage.get(),null),"png",normalFile);
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            */
         }
     }
 
