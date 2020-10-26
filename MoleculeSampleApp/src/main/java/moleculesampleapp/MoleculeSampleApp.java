@@ -251,6 +251,7 @@ public class MoleculeSampleApp extends Application {
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
+System.out.println(event.getCode());
                 Duration currentTime;
                 switch (event.getCode()) {
                     case Z:
@@ -281,6 +282,9 @@ public class MoleculeSampleApp extends Application {
                         }
                         break;
                     case SPACE:
+if (timeline == null) {
+timeline = new Timeline();
+}
                         if (timelinePlaying) {
                             timeline.pause();
                             timelinePlaying = false;
