@@ -1,4 +1,4 @@
-/*
+cd /*
  * Copyright (c) 2011, 2013 Oracle and/or its affiliates.
  * All rights reserved. Use is subject to license terms.
  *
@@ -251,7 +251,7 @@ public class MoleculeSampleApp extends Application {
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
-System.out.println(event.getCode());
+                System.out.println(event.getCode());
                 Duration currentTime;
                 switch (event.getCode()) {
                     case Z:
@@ -282,9 +282,9 @@ System.out.println(event.getCode());
                         }
                         break;
                     case SPACE:
-if (timeline == null) {
-timeline = new Timeline();
-}
+                        if (timeline == null) {
+                            timeline = new Timeline();
+                        }
                         if (timelinePlaying) {
                             timeline.pause();
                             timelinePlaying = false;

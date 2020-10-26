@@ -52,7 +52,8 @@ public class Jfx3dViewerApp extends Application {
         return contentModel;
     }
 
-    @Override public void start(Stage stage) throws Exception {
+    @Override
+    public void start(Stage stage) throws Exception {
         sessionManager = SessionManager.createSessionManager("Jfx3dViewerApp");
         sessionManager.loadSession();
 

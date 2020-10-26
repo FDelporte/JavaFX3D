@@ -103,7 +103,8 @@ public class MainController implements Initializable {
     private TimelineController timelineController;
     private SessionManager sessionManager = SessionManager.getSessionManager();
 
-    @Override public void initialize(URL location, ResourceBundle resources) {
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
         try {
             // CREATE NAVIGATOR CONTROLS
             Parent navigationPanel = FXMLLoader.load(MainController.class.getResource("navigation.fxml"));
